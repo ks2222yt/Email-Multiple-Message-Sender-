@@ -5,9 +5,8 @@ import dearpygui.dearpygui as gui
 import time
 import threading
 import mouse
-import logging
 
-name = '$P4MM3R'
+name = 'NOT $P4MM3R PLZ GITHUB DO NOT DELETE'
 
 def send_email(sender, receiver, subject, body, password):
     msg = MIMEMultipart()
@@ -19,9 +18,9 @@ def send_email(sender, receiver, subject, body, password):
             server.starttls()
             server.login(sender, password)
             server.sendmail(sender, receiver, msg.as_string())
-        logging.info("Email sent successfully!")
+        print("sent!")
     except Exception as e:
-        logging.error(f"Email sending failed: {e}")
+        print(e)
 
 def main():
     while True:
