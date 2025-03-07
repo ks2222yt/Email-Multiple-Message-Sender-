@@ -105,7 +105,7 @@ def start_gui():
         with gui.group(pos=(x_center,pos_y)):
             gui.add_input_text(tag='receiver', hint='Target Mail',          width = input_width)
             gui.add_input_text(tag='sender', hint='Your Mail',              width = input_width)
-            gui.add_input_text(tag='smtp_pass', hint='Gmail SMTP Password', width = input_width, password=True)
+            gui.add_input_text(tag='smtp_pass', hint='Gmail SMTP (APP) Password', width = input_width, password=True)
             gui.add_input_text(tag='message', hint='Subject',               width = input_width)
             gui.add_input_text(tag='body', hint='Message',                  width = input_width)
             gui.add_spacer(height=10)
